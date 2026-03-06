@@ -201,8 +201,18 @@ function renderRow(p) {
   if (p.linkedin) links.push(`<a href="https://linkedin.com${p.linkedin}" target="_blank" title="LinkedIn">in</a>`);
   if (p.instagram && p.instagram.toLowerCase() !== 'yes') links.push(`<a href="https://instagram.com/${p.instagram}" target="_blank" title="Instagram">ig</a>`);
   if (p.website) links.push(`<a href="${p.website}" target="_blank" title="${p.website}">🔗</a>`);
+  if (p.luma_url) links.push(`<a href="${p.luma_url}" target="_blank" title="Luma Profile" style="font-size:10px;">Lu</a>`);
   
-  const bio = p.bio || p.luma_bio || '';
+  // Show both bios if different
+  const twBio = p.tw_bio || '';
+  const lumaBio = p.luma_bio || '';
+  let bioHtml = '';
+  if (twBio && lumaBio && twBio !== lumaBio) {
+    bioHtml = `<div style="line-height:1.4"><span style="color:#333">${twBio}</span><br><span style="color:#999;font-size:11px;">Luma: ${lumaBio}</span></div>`;
+  } else {
+    bioHtml = twBio || lumaBio || '';
+  }
+  
   const verified = p.tw_verified ? ' <span class="verified">✓</span>' : '';
   const tagsHtml = tags.map(t => `<span class="tag ${tagClasses[t]}">${t}</span>`).join('');
   const followers = p.tw_followers ? `<span class="followers">${formatFollowers(p.tw_followers)}</span>` : '';
@@ -210,7 +220,7 @@ function renderRow(p) {
   
   return `<tr>
     <td class="name-cell">${p.name}${verified}${cityBadge}</td>
-    <td class="bio-cell" title="${bio.replace(/"/g,'&quot;')}">${bio}</td>
+    <td class="bio-cell" style="white-space:normal;max-width:350px;" title="${(twBio||lumaBio).replace(/"/g,'&quot;')}">${bioHtml}</td>
     <td>${tagsHtml}</td>
     <td><div class="social-links">${links.join('')}</div></td>
     <td>${followers}</td>
