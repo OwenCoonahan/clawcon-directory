@@ -87,23 +87,41 @@ html.dark .tag-pm { background: #2a0808; color: #f87171; }
 html.dark .tag-marketing { background: #2a0820; color: #f472b6; }
 html.dark .tag-research { background: #082030; color: #38bdf8; }
 html.dark .tag-designer { background: #1a0d30; color: #a78bfa; }
-.theme-toggle { position: fixed; top: 16px; right: 16px; z-index: 100; width: 36px; height: 36px; border-radius: 8px; border: 1px solid var(--border); background: var(--bg-card); color: var(--text); cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 18px; transition: all 0.2s; }
-.theme-toggle:hover { border-color: var(--text); }
+.theme-toggle { position: fixed; top: 16px; right: 16px; z-index: 100; width: 36px; height: 36px; border-radius: 8px; border: 1px solid var(--border); background: var(--bg-card); color: var(--text-muted); cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.2s; padding: 0; }
+.theme-toggle:hover { border-color: var(--text); color: var(--text); }
+.theme-toggle svg { width: 18px; height: 18px; }
 .tag-student { background: #fff8f0; color: #996600; }
 .tag-pm { background: #f0ffff; color: #008888; }
 .empty { text-align: center; padding: 40px; color: #888; }
 .loading { text-align: center; padding: 40px; color: #888; }
 @media (max-width: 768px) {
-  .container { padding: 16px; }
-  header h1 { font-size: 22px; }
-  .bio-cell { max-width: 150px; }
-  td, th { padding: 8px 10px; }
-  .city-tab { padding: 10px 14px; font-size: 13px; }
+  .container { padding: 12px; }
+  header { padding: 20px 0 16px; }
+  header h1 { font-size: 20px; }
+  header p { font-size: 13px; }
+  .stats { gap: 8px; }
+  .stat { padding: 8px 12px; }
+  .stat-num { font-size: 18px; }
+  .stat-label { font-size: 9px; }
+  .controls { gap: 8px; }
+  .search { min-width: 100%; padding: 10px 14px; font-size: 16px; }
+  .sort-select { font-size: 12px; padding: 7px 10px; }
+  .filter-btn { padding: 6px 10px; font-size: 11px; }
+  .city-tab { padding: 8px 12px; font-size: 12px; }
+  .city-tab .count { font-size: 10px; margin-left: 4px; }
+  table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  th, td { padding: 8px 10px; font-size: 12px; white-space: nowrap; }
+  .bio-cell { max-width: 200px; white-space: nowrap !important; overflow: hidden; text-overflow: ellipsis; }
+  .name-cell { font-size: 13px; }
+  .social-links a { width: 24px; height: 24px; font-size: 10px; }
+  .theme-toggle { top: 12px; right: 12px; width: 32px; height: 32px; }
+  .theme-toggle svg { width: 16px; height: 16px; }
+  #filters { gap: 6px; }
 }
 </style>
 </head>
 <body>
-<button class="theme-toggle" id="themeToggle" title="Toggle dark mode">🌙</button>
+<button class="theme-toggle" id="themeToggle" title="Toggle dark mode"><svg id="iconMoon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg id="iconSun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button>
 <div class="container">
   <header>
     <h1>ClawCon — Global Attendee Directory</h1>
@@ -395,7 +413,8 @@ document.getElementById('downloadCsv').addEventListener('click', () => {
 const themeToggle = document.getElementById('themeToggle');
 function setTheme(dark) {
   document.documentElement.classList.toggle('dark', dark);
-  themeToggle.textContent = dark ? '☀️' : '🌙';
+  document.getElementById('iconMoon').style.display = dark ? 'none' : 'block';
+  document.getElementById('iconSun').style.display = dark ? 'block' : 'none';
   localStorage.setItem('theme', dark ? 'dark' : 'light');
 }
 themeToggle.addEventListener('click', () => {
