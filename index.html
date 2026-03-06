@@ -115,13 +115,12 @@ tr:hover { background: #f9f9f9; }
 <script>
 const CITIES = [
   { id: 'all', name: 'All Cities', file: null },
-  { id: 'nyc', name: 'NYC', file: 'data.json', date: 'Mar 5' },
+  { id: 'nyc', name: 'NYC', file: 'data-nyc.json', date: 'Mar 5' },
   { id: 'austin', name: 'Austin', file: 'data-austin.json', date: 'Mar 12' },
-  { id: 'tel-aviv', name: 'Tel Aviv', file: 'data-tel-aviv.json', date: 'Mar 18' },
+  { id: 'telaviv', name: 'Tel Aviv', file: 'data-telaviv.json', date: 'Mar 18' },
   { id: 'miami', name: 'Miami', file: 'data-miami.json', date: 'Mar 25' },
   { id: 'london', name: 'London', file: 'data-london.json', date: 'Apr 8' },
   { id: 'guadalajara', name: 'Guadalajara', file: 'data-guadalajara.json', date: 'Apr 18' },
-  { id: 'rio', name: 'Rio', file: 'data-rio.json', date: 'Apr 29' },
 ];
 
 let cityData = {};
@@ -192,7 +191,7 @@ function formatFollowers(n) {
 }
 
 const tagClasses = { founder:'tag-founder', engineer:'tag-engineer', vc:'tag-vc', designer:'tag-designer', student:'tag-student', pm:'tag-pm' };
-const cityNames = { nyc:'NYC', austin:'Austin', 'tel-aviv':'Tel Aviv', miami:'Miami', london:'London', guadalajara:'GDL', rio:'Rio' };
+const cityNames = { nyc:'NYC', austin:'Austin', telaviv:'Tel Aviv', miami:'Miami', london:'London', guadalajara:'GDL' };
 
 function renderRow(p) {
   const tags = detectTags(p);

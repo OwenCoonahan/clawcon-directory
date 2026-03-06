@@ -12,43 +12,7 @@
     "luma_bio": "data, longevity, travel"
   },
   {
-    "name": "622278",
-    "bio": "",
-    "twitter": "_tavorazo",
-    "tw_followers": 0,
-    "tw_verified": false,
-    "tw_location": "",
-    "linkedin": "/in/octaviorazoverduzco",
-    "instagram": "",
-    "website": "",
-    "luma_bio": ""
-  },
-  {
-    "name": "Aaron",
-    "bio": "",
-    "twitter": "",
-    "tw_followers": 0,
-    "tw_verified": false,
-    "tw_location": "",
-    "linkedin": "/in/fullstack-problem-solver",
-    "instagram": "",
-    "website": "",
-    "luma_bio": ""
-  },
-  {
-    "name": "Abel zolorzano",
-    "bio": "",
-    "twitter": "",
-    "tw_followers": 0,
-    "tw_verified": false,
-    "tw_location": "",
-    "linkedin": "/in/abel-antonio-sol\u00f3rzano-b5049957",
-    "instagram": "",
-    "website": "",
-    "luma_bio": ""
-  },
-  {
-    "name": "Abraham Alfaro",
+    "name": "Aaron Farahnik",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -60,19 +24,7 @@
     "luma_bio": ""
   },
   {
-    "name": "Abraham Perez",
-    "bio": "",
-    "twitter": "",
-    "tw_followers": 0,
-    "tw_verified": false,
-    "tw_location": "",
-    "linkedin": "/in/abrahamperz",
-    "instagram": "",
-    "website": "https://danil.ai",
-    "luma_bio": ""
-  },
-  {
-    "name": "Adolfo Ramirez",
+    "name": "Adam",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -84,7 +36,19 @@
     "luma_bio": ""
   },
   {
-    "name": "Adolfo Ram\u00edrez",
+    "name": "Adam Levi",
+    "bio": "",
+    "twitter": "",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "/in/realadamlevi",
+    "instagram": "",
+    "website": "",
+    "luma_bio": ""
+  },
+  {
+    "name": "Adam Segal",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -96,122 +60,26 @@
     "luma_bio": ""
   },
   {
-    "name": "Adrian Nava",
+    "name": "Adrian Zuckerberger",
+    "bio": "",
+    "twitter": "",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "/in/adrian-zuckerberger",
+    "instagram": "",
+    "website": "",
+    "luma_bio": ""
+  },
+  {
+    "name": "alan mekibel",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
     "tw_verified": false,
     "tw_location": "",
     "linkedin": "",
-    "instagram": "",
-    "website": "",
-    "luma_bio": ""
-  },
-  {
-    "name": "Alberto Barrera",
-    "bio": "",
-    "twitter": "",
-    "tw_followers": 0,
-    "tw_verified": false,
-    "tw_location": "",
-    "linkedin": "",
-    "instagram": "",
-    "website": "",
-    "luma_bio": ""
-  },
-  {
-    "name": "Alejandro gu\u00edzar",
-    "bio": "",
-    "twitter": "",
-    "tw_followers": 0,
-    "tw_verified": false,
-    "tw_location": "",
-    "linkedin": "",
-    "instagram": "",
-    "website": "",
-    "luma_bio": ""
-  },
-  {
-    "name": "Alejandro Hernandez",
-    "bio": "",
-    "twitter": "",
-    "tw_followers": 0,
-    "tw_verified": false,
-    "tw_location": "",
-    "linkedin": "",
-    "instagram": "",
-    "website": "",
-    "luma_bio": ""
-  },
-  {
-    "name": "Alejandro Ramirez Tamayo",
-    "bio": "",
-    "twitter": "",
-    "tw_followers": 0,
-    "tw_verified": false,
-    "tw_location": "",
-    "linkedin": "",
-    "instagram": "",
-    "website": "",
-    "luma_bio": ""
-  },
-  {
-    "name": "Alejandro Renteria",
-    "bio": "",
-    "twitter": "",
-    "tw_followers": 0,
-    "tw_verified": false,
-    "tw_location": "",
-    "linkedin": "/in/rentheria",
-    "instagram": "",
-    "website": "",
-    "luma_bio": ""
-  },
-  {
-    "name": "Alexei Rayas",
-    "bio": "",
-    "twitter": "",
-    "tw_followers": 0,
-    "tw_verified": false,
-    "tw_location": "",
-    "linkedin": "/in/alexei-rayas-5a4223386",
-    "instagram": "",
-    "website": "",
-    "luma_bio": ""
-  },
-  {
-    "name": "Alfonso Bravo",
-    "bio": "",
-    "twitter": "",
-    "tw_followers": 0,
-    "tw_verified": false,
-    "tw_location": "",
-    "linkedin": "",
-    "instagram": "",
-    "website": "",
-    "luma_bio": ""
-  },
-  {
-    "name": "alfonso robles",
-    "bio": "",
-    "twitter": "",
-    "tw_followers": 0,
-    "tw_verified": false,
-    "tw_location": "",
-    "linkedin": "",
-    "instagram": "",
-    "website": "",
-    "luma_bio": ""
-  },
-  {
-    "name": "Alfredo Carmona",
-    "bio": "",
-    "twitter": "",
-    "tw_followers": 0,
-    "tw_verified": false,
-    "tw_location": "",
-    "linkedin": "",
-    "instagram": "",
+    "instagram": "Alanmekibel",
     "website": "",
     "luma_bio": ""
   },
@@ -228,7 +96,7 @@
     "luma_bio": "Hey, I\u2019m Alfredo Glover, a self-employed blockchain developer with five years of hands-on experience building smart contracts and Web3 apps"
   },
   {
-    "name": "Anabell",
+    "name": "Alon Maor",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -240,7 +108,31 @@
     "luma_bio": ""
   },
   {
-    "name": "Aneudy abreu",
+    "name": "Amichai Bergman",
+    "bio": "",
+    "twitter": "",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "/in/amichaibergman",
+    "instagram": "",
+    "website": "",
+    "luma_bio": ""
+  },
+  {
+    "name": "Amit Maimon",
+    "bio": "Building and scaling new ventures @ Asfiro.com",
+    "twitter": "",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "/in/amitmaimon",
+    "instagram": "",
+    "website": "",
+    "luma_bio": "Building and scaling new ventures @ Asfiro.com"
+  },
+  {
+    "name": "Amit Paz",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -252,79 +144,7 @@
     "luma_bio": ""
   },
   {
-    "name": "Angel Pineda",
-    "bio": "Desarrollador de software, actualmente trabajo como FrontEnd Developer",
-    "twitter": "",
-    "tw_followers": 0,
-    "tw_verified": false,
-    "tw_location": "",
-    "linkedin": "/in/angelpineda-dev",
-    "instagram": "",
-    "website": "",
-    "luma_bio": "Desarrollador de software, actualmente trabajo como FrontEnd Developer"
-  },
-  {
-    "name": "Antonio Martinez Quintero",
-    "bio": "CoFounder  feedby.ai & holochat.app \nEx-Cofounder Plerk S20",
-    "twitter": "dpeluche",
-    "tw_followers": 0,
-    "tw_verified": false,
-    "tw_location": "",
-    "linkedin": "/in/joseantoniomtzq",
-    "instagram": "dpeluche",
-    "website": "https://feedby.ai",
-    "luma_bio": "CoFounder  feedby.ai & holochat.app \nEx-Cofounder Plerk S20"
-  },
-  {
-    "name": "arturo",
-    "bio": "",
-    "twitter": "",
-    "tw_followers": 0,
-    "tw_verified": false,
-    "tw_location": "",
-    "linkedin": "/in/885458133",
-    "instagram": "",
-    "website": "",
-    "luma_bio": ""
-  },
-  {
-    "name": "Arturo Bautista",
-    "bio": "",
-    "twitter": "",
-    "tw_followers": 0,
-    "tw_verified": false,
-    "tw_location": "",
-    "linkedin": "/in/Artugrob",
-    "instagram": "",
-    "website": "",
-    "luma_bio": ""
-  },
-  {
-    "name": "Arturo Makigan",
-    "bio": "",
-    "twitter": "",
-    "tw_followers": 0,
-    "tw_verified": false,
-    "tw_location": "",
-    "linkedin": "/in/arturo-makigan-093698203",
-    "instagram": "arturomakigan",
-    "website": "https://ibitacora.app",
-    "luma_bio": ""
-  },
-  {
-    "name": "Braulio Hernandez",
-    "bio": "Tech Founder",
-    "twitter": "",
-    "tw_followers": 0,
-    "tw_verified": false,
-    "tw_location": "",
-    "linkedin": "/in/brauliohl",
-    "instagram": "",
-    "website": "",
-    "luma_bio": "Tech Founder"
-  },
-  {
-    "name": "Bronce Gonz\u00e1lez",
+    "name": "Andrew Jacobson",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -336,19 +156,7 @@
     "luma_bio": ""
   },
   {
-    "name": "Carlos Gil",
-    "bio": "",
-    "twitter": "gilcarlos",
-    "tw_followers": 0,
-    "tw_verified": false,
-    "tw_location": "",
-    "linkedin": "",
-    "instagram": "gilcarlos",
-    "website": "",
-    "luma_bio": ""
-  },
-  {
-    "name": "Carlos Morelos",
+    "name": "Anton",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -360,7 +168,7 @@
     "luma_bio": ""
   },
   {
-    "name": "Carolina Ruiz Gudino",
+    "name": "Ariel David",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -372,31 +180,19 @@
     "luma_bio": ""
   },
   {
-    "name": "C\u00e9sar D\u00edaz",
+    "name": "Ariel Steinberg",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
     "tw_verified": false,
     "tw_location": "",
-    "linkedin": "/in/cesar-diaz-hermosillo",
+    "linkedin": "/in/arielmsteinberg",
     "instagram": "",
     "website": "",
     "luma_bio": ""
   },
   {
-    "name": "Clay Rodolfo Gutierrez Herrera",
-    "bio": "",
-    "twitter": "",
-    "tw_followers": 0,
-    "tw_verified": false,
-    "tw_location": "",
-    "linkedin": "",
-    "instagram": "",
-    "website": "",
-    "luma_bio": ""
-  },
-  {
-    "name": "Cristian",
+    "name": "Ari Teman",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -408,19 +204,7 @@
     "luma_bio": ""
   },
   {
-    "name": "Daniel",
-    "bio": "Soporte t\u00e9cnico",
-    "twitter": "danny_L_dns",
-    "tw_followers": 0,
-    "tw_verified": false,
-    "tw_location": "",
-    "linkedin": "",
-    "instagram": "dan_mda1",
-    "website": "",
-    "luma_bio": "Soporte t\u00e9cnico"
-  },
-  {
-    "name": "Daniel Aguilar",
+    "name": "Aviad",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -432,7 +216,19 @@
     "luma_bio": ""
   },
   {
-    "name": "Daniel Partida",
+    "name": "Aya",
+    "bio": "",
+    "twitter": "",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "/in/aya-shavit",
+    "instagram": "",
+    "website": "",
+    "luma_bio": ""
+  },
+  {
+    "name": "Bar Laub",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -444,7 +240,19 @@
     "luma_bio": ""
   },
   {
-    "name": "David Amezcua",
+    "name": "Barr Solnik",
+    "bio": "",
+    "twitter": "",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "/in/solnik",
+    "instagram": "",
+    "website": "",
+    "luma_bio": ""
+  },
+  {
+    "name": "Barry",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -456,7 +264,79 @@
     "luma_bio": ""
   },
   {
-    "name": "Diego Choza",
+    "name": "Ben Ashkenazi",
+    "bio": "",
+    "twitter": "",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "/in/ben-ashkenazi-384a55164",
+    "instagram": "",
+    "website": "",
+    "luma_bio": ""
+  },
+  {
+    "name": "Benny Mestel",
+    "bio": "",
+    "twitter": "",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "/in/benny-mestel",
+    "instagram": "",
+    "website": "",
+    "luma_bio": ""
+  },
+  {
+    "name": "Beny Rubinstein",
+    "bio": "Supporter of Women in Tech. Mentor, advisor, coach, investor. Founding team member, Microsoft Azure global business development",
+    "twitter": "brubinst",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "/in/rubinsteinbeny",
+    "instagram": "brubinst",
+    "website": "https://www.benyrubinstein.com",
+    "luma_bio": "Supporter of Women in Tech. Mentor, advisor, coach, investor. Founding team member, Microsoft Azure global business development"
+  },
+  {
+    "name": "Brian Spivak",
+    "bio": "",
+    "twitter": "",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "/in/spibri85",
+    "instagram": "",
+    "website": "",
+    "luma_bio": ""
+  },
+  {
+    "name": "Carolina Fain",
+    "bio": "",
+    "twitter": "",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "/in/carolina-fain",
+    "instagram": "",
+    "website": "",
+    "luma_bio": ""
+  },
+  {
+    "name": "Chen Berger",
+    "bio": "",
+    "twitter": "",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "/in/chen-berger",
+    "instagram": "",
+    "website": "",
+    "luma_bio": ""
+  },
+  {
+    "name": "Dabiel Rubin",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -468,19 +348,7 @@
     "luma_bio": ""
   },
   {
-    "name": "Diego Lopez",
-    "bio": "Co-founder @ Alquify AI",
-    "twitter": "",
-    "tw_followers": 0,
-    "tw_verified": false,
-    "tw_location": "",
-    "linkedin": "/in/diegolopezv",
-    "instagram": "dlopezvsr",
-    "website": "https://alquify.app",
-    "luma_bio": "Co-founder @ Alquify AI"
-  },
-  {
-    "name": "Diego Ortiz",
+    "name": "Daniel Brodie",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -492,19 +360,19 @@
     "luma_bio": ""
   },
   {
-    "name": "Diego V\u00e1zquez",
-    "bio": "Game Developer",
-    "twitter": "OddlyWareStudio",
+    "name": "Dan Lev",
+    "bio": "",
+    "twitter": "justcrypto21",
     "tw_followers": 0,
     "tw_verified": false,
     "tw_location": "",
-    "linkedin": "/company/amber",
-    "instagram": "oddlywarestudio",
-    "website": "https://www.oddlywarestudio.com",
-    "luma_bio": "Game Developer"
+    "linkedin": "",
+    "instagram": "",
+    "website": "",
+    "luma_bio": ""
   },
   {
-    "name": "Dulce",
+    "name": "Dan Markel",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -516,91 +384,7 @@
     "luma_bio": ""
   },
   {
-    "name": "Edgardo Ochoa",
-    "bio": "",
-    "twitter": "",
-    "tw_followers": 0,
-    "tw_verified": false,
-    "tw_location": "",
-    "linkedin": "/in/eochoa",
-    "instagram": "",
-    "website": "",
-    "luma_bio": ""
-  },
-  {
-    "name": "Eduardo Aguirre",
-    "bio": "EAD",
-    "twitter": "eduardoaguirred",
-    "tw_followers": 0,
-    "tw_verified": false,
-    "tw_location": "",
-    "linkedin": "/in/ead",
-    "instagram": "eduardoaguirred",
-    "website": "https://darwinnow.io",
-    "luma_bio": "EAD"
-  },
-  {
-    "name": "Eduardo Malaga",
-    "bio": "",
-    "twitter": "",
-    "tw_followers": 0,
-    "tw_verified": false,
-    "tw_location": "",
-    "linkedin": "/in/eduardo-malaga",
-    "instagram": "",
-    "website": "",
-    "luma_bio": ""
-  },
-  {
-    "name": "Eduardo Velez Santiago",
-    "bio": "",
-    "twitter": "",
-    "tw_followers": 0,
-    "tw_verified": false,
-    "tw_location": "",
-    "linkedin": "/in/eddvelezs",
-    "instagram": "",
-    "website": "",
-    "luma_bio": ""
-  },
-  {
-    "name": "Edwin Rojas",
-    "bio": "",
-    "twitter": "",
-    "tw_followers": 0,
-    "tw_verified": false,
-    "tw_location": "",
-    "linkedin": "/in/edwinrojaspreciado",
-    "instagram": "edwinrojas.ia",
-    "website": "",
-    "luma_bio": ""
-  },
-  {
-    "name": "El\u00edas Rashid Morales Mendoza",
-    "bio": "21 a\u00f1os.\ud83d\ude80 \nFinanzas ciencia de datos e IA. \nEspecializ\u00e1ndome en procesos financieros con IA , data y BI.",
-    "twitter": "elimoralsmendox",
-    "tw_followers": 0,
-    "tw_verified": false,
-    "tw_location": "",
-    "linkedin": "/in/elias-rashid-morales-mendoza",
-    "instagram": "",
-    "website": "https://www.notion.so/elimoralsmendox/2c60395806da4a4f8b646c84b4eaf7de?v=00acc4171bfe48e0933c414c70381e25",
-    "luma_bio": "21 a\u00f1os.\ud83d\ude80 \nFinanzas ciencia de datos e IA. \nEspecializ\u00e1ndome en procesos financieros con IA , data y BI."
-  },
-  {
-    "name": "Eliecer Garcia",
-    "bio": "",
-    "twitter": "absa_garcia",
-    "tw_followers": 0,
-    "tw_verified": false,
-    "tw_location": "",
-    "linkedin": "/in/eliecer-garcia-b1a3ba1a9",
-    "instagram": "absa_coding",
-    "website": "",
-    "luma_bio": ""
-  },
-  {
-    "name": "Eliezer Solano Martinez",
+    "name": "Danny Shmueli",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -612,7 +396,55 @@
     "luma_bio": ""
   },
   {
-    "name": "Emiliano Rodr\u00edguez",
+    "name": "David Krutonog",
+    "bio": "",
+    "twitter": "",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "/in/david-krutonog",
+    "instagram": "davidkrutonog",
+    "website": "",
+    "luma_bio": ""
+  },
+  {
+    "name": "David Shusterman",
+    "bio": "",
+    "twitter": "",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "/in/david-shusterman-552b8b131",
+    "instagram": "",
+    "website": "",
+    "luma_bio": ""
+  },
+  {
+    "name": "david silverman",
+    "bio": "",
+    "twitter": "",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "/in/davidsilv",
+    "instagram": "",
+    "website": "",
+    "luma_bio": ""
+  },
+  {
+    "name": "David Sulitzer",
+    "bio": "Ardent minimalist with patient curiosity. Avid science fiction reader with a philosophical mind.",
+    "twitter": "8Gaston8",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "",
+    "instagram": "8gaston8",
+    "website": "",
+    "luma_bio": "Ardent minimalist with patient curiosity. Avid science fiction reader with a philosophical mind."
+  },
+  {
+    "name": "Dor Lerner",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -624,7 +456,7 @@
     "luma_bio": ""
   },
   {
-    "name": "Emmanuel Enr\u00edquez",
+    "name": "Dov Reshef",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -636,7 +468,31 @@
     "luma_bio": ""
   },
   {
-    "name": "Enrique Lozano",
+    "name": "Dvir",
+    "bio": "",
+    "twitter": "",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "/in/dviros",
+    "instagram": "",
+    "website": "",
+    "luma_bio": ""
+  },
+  {
+    "name": "Eitan Engelberg",
+    "bio": "",
+    "twitter": "",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "/in/eitan-engelberg-88ab1b215",
+    "instagram": "",
+    "website": "",
+    "luma_bio": ""
+  },
+  {
+    "name": "Eli",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -648,7 +504,7 @@
     "luma_bio": ""
   },
   {
-    "name": "Ernesto Barajas Flores",
+    "name": "Elie Parienti",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -660,7 +516,7 @@
     "luma_bio": ""
   },
   {
-    "name": "EZEQUIEL PASILLAS GONZALEZ",
+    "name": "Elijah Lippe",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -672,7 +528,19 @@
     "luma_bio": ""
   },
   {
-    "name": "Fabian",
+    "name": "Eli Parkes",
+    "bio": "Head of Ops @ Heron AI Security",
+    "twitter": "",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "",
+    "instagram": "",
+    "website": "",
+    "luma_bio": "Head of Ops @ Heron AI Security"
+  },
+  {
+    "name": "Eran Naor",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -684,7 +552,19 @@
     "luma_bio": ""
   },
   {
-    "name": "Fernando Amador",
+    "name": "Etai Hochman",
+    "bio": "",
+    "twitter": "",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "/in/etai-hochman",
+    "instagram": "",
+    "website": "",
+    "luma_bio": ""
+  },
+  {
+    "name": "Eyal Toledano",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -696,7 +576,7 @@
     "luma_bio": ""
   },
   {
-    "name": "Fernando Rodr\u00edguez",
+    "name": "Gadi Naor",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -708,7 +588,7 @@
     "luma_bio": ""
   },
   {
-    "name": "Francisco Gonzalez",
+    "name": "Gal Butler",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -720,7 +600,7 @@
     "luma_bio": ""
   },
   {
-    "name": "Gabriel Freyria",
+    "name": "Gili canaani",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -732,7 +612,7 @@
     "luma_bio": ""
   },
   {
-    "name": "Gerardo Melgoza",
+    "name": "Gordon Henry",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -744,55 +624,19 @@
     "luma_bio": ""
   },
   {
-    "name": "Gerardo Vel\u00e1zquez",
+    "name": "Guy Weissman",
     "bio": "",
-    "twitter": "gerardoVC",
+    "twitter": "guyweiss",
     "tw_followers": 0,
     "tw_verified": false,
     "tw_location": "",
-    "linkedin": "/in/GerardoVelazquezC",
+    "linkedin": "/in/guyweissman",
     "instagram": "",
     "website": "",
     "luma_bio": ""
   },
   {
-    "name": "Geronimo",
-    "bio": "",
-    "twitter": "patux",
-    "tw_followers": 0,
-    "tw_verified": false,
-    "tw_location": "",
-    "linkedin": "/in/patux",
-    "instagram": "",
-    "website": "",
-    "luma_bio": ""
-  },
-  {
-    "name": "Gustavo Lopez",
-    "bio": "",
-    "twitter": "",
-    "tw_followers": 0,
-    "tw_verified": false,
-    "tw_location": "",
-    "linkedin": "/in/goslopez",
-    "instagram": "",
-    "website": "",
-    "luma_bio": ""
-  },
-  {
-    "name": "Hector Flores",
-    "bio": "",
-    "twitter": "",
-    "tw_followers": 0,
-    "tw_verified": false,
-    "tw_location": "",
-    "linkedin": "/in/hectorcflores",
-    "instagram": "",
-    "website": "",
-    "luma_bio": ""
-  },
-  {
-    "name": "Hector ortega",
+    "name": "Guy Zisman",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -804,7 +648,67 @@
     "luma_bio": ""
   },
   {
-    "name": "Isaac Delgado",
+    "name": "Idan Braf",
+    "bio": "",
+    "twitter": "",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "/in/idan-braf",
+    "instagram": "",
+    "website": "",
+    "luma_bio": ""
+  },
+  {
+    "name": "Ido Goldberg",
+    "bio": "",
+    "twitter": "",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "/in/Idogoldberg",
+    "instagram": "",
+    "website": "",
+    "luma_bio": ""
+  },
+  {
+    "name": "Ilan Fisher",
+    "bio": "",
+    "twitter": "",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "/in/ilan-fisher-646311b8",
+    "instagram": "",
+    "website": "",
+    "luma_bio": ""
+  },
+  {
+    "name": "ilprinceps",
+    "bio": "",
+    "twitter": "ilprinceps",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "",
+    "instagram": "",
+    "website": "https://edeneum.beehiiv.com/",
+    "luma_bio": ""
+  },
+  {
+    "name": "Isaac Laifer",
+    "bio": "Founder at PikMe",
+    "twitter": "isaac_laifer",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "/in/isaaclaifer",
+    "instagram": "icelaif",
+    "website": "https://isaaclaifer.com",
+    "luma_bio": "Founder at PikMe"
+  },
+  {
+    "name": "Javier Plavnick",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -816,43 +720,43 @@
     "luma_bio": ""
   },
   {
-    "name": "Isaac Rayon",
-    "bio": "CEO @ Blau | AI for waste management",
+    "name": "Jeremy Esekow",
+    "bio": "",
     "twitter": "",
     "tw_followers": 0,
     "tw_verified": false,
     "tw_location": "",
-    "linkedin": "/in/jesus-isaac-rayon-palomar",
-    "instagram": "",
-    "website": "https://www.blaucorp.com",
-    "luma_bio": "CEO @ Blau | AI for waste management"
-  },
-  {
-    "name": "Isaac Rico",
-    "bio": "",
-    "twitter": "esedarketodeahi",
-    "tw_followers": 0,
-    "tw_verified": false,
-    "tw_location": "",
-    "linkedin": "/in/isaac-torres-rico-487394299",
+    "linkedin": "/in/jeremy-esekow-29b18622",
     "instagram": "",
     "website": "",
     "luma_bio": ""
   },
   {
-    "name": "Isaac Rodriguez",
-    "bio": "Mr.Coin CryptoGDL + IA",
-    "twitter": "mrcoinmx",
+    "name": "Jonathan Karten",
+    "bio": "Comedy Enthusiast. Columbia-trained economist. Exited Iftach Founder. Former IDF officer. Principal VC focused on deep-tech Dual use at Awz.",
+    "twitter": "",
     "tw_followers": 0,
     "tw_verified": false,
     "tw_location": "",
-    "linkedin": "/in/isaacrodriguezmexico",
-    "instagram": "comunidadmrcoin",
-    "website": "https://mrcoin.com.mx",
-    "luma_bio": "Mr.Coin CryptoGDL + IA"
+    "linkedin": "/in/jkarten",
+    "instagram": "jdkarten",
+    "website": "",
+    "luma_bio": "Comedy Enthusiast. Columbia-trained economist. Exited Iftach Founder. Former IDF officer. Principal VC focused on deep-tech Dual use at Awz."
   },
   {
-    "name": "Ivan",
+    "name": "Jonathan Witt",
+    "bio": "",
+    "twitter": "jj",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "",
+    "instagram": "",
+    "website": "",
+    "luma_bio": ""
+  },
+  {
+    "name": "Jorge Rybar",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -864,19 +768,7 @@
     "luma_bio": ""
   },
   {
-    "name": "Ivan Galaviz",
-    "bio": "",
-    "twitter": "",
-    "tw_followers": 0,
-    "tw_verified": false,
-    "tw_location": "",
-    "linkedin": "/in/ivanovishado",
-    "instagram": "",
-    "website": "https://www.ivanovishado.dev",
-    "luma_bio": ""
-  },
-  {
-    "name": "Ivette Vargas",
+    "name": "Joshua Davis",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -888,43 +780,31 @@
     "luma_bio": ""
   },
   {
-    "name": "Javier Enr\u00edquez",
+    "name": "Joshua Kaufman",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
     "tw_verified": false,
     "tw_location": "",
-    "linkedin": "/in/jenriquez5",
-    "instagram": "",
-    "website": "https://loveaxel.com",
-    "luma_bio": ""
-  },
-  {
-    "name": "Jorge Edwin Guevara Ayala",
-    "bio": "",
-    "twitter": "",
-    "tw_followers": 0,
-    "tw_verified": false,
-    "tw_location": "",
-    "linkedin": "",
+    "linkedin": "/in/jkauf",
     "instagram": "",
     "website": "",
     "luma_bio": ""
   },
   {
-    "name": "Jorge Laureano",
+    "name": "Joshua Levi",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
     "tw_verified": false,
     "tw_location": "",
-    "linkedin": "/in/jorge-alberto-laureano-corona-55b44b239",
+    "linkedin": "/in/joshua-levi63",
     "instagram": "",
     "website": "",
     "luma_bio": ""
   },
   {
-    "name": "Jos\u00e9 Alfredo Garc\u00eda",
+    "name": "Justin Gillman",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -936,7 +816,7 @@
     "luma_bio": ""
   },
   {
-    "name": "Jos\u00e9 Antonio Razo L\u00f3pez",
+    "name": "Karl Moik",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -948,7 +828,7 @@
     "luma_bio": ""
   },
   {
-    "name": "Jos\u00e9 Armando Lara Canchola",
+    "name": "Kelman Yoni",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -960,151 +840,19 @@
     "luma_bio": ""
   },
   {
-    "name": "Jose Carlos Sierra",
+    "name": "Kfir Kachlon",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
     "tw_verified": false,
     "tw_location": "",
-    "linkedin": "",
+    "linkedin": "/in/kfirkachlon",
     "instagram": "",
     "website": "",
     "luma_bio": ""
   },
   {
-    "name": "Jose Ernesto",
-    "bio": "",
-    "twitter": "",
-    "tw_followers": 0,
-    "tw_verified": false,
-    "tw_location": "",
-    "linkedin": "/in/ernesto-ram\u00edrez-garc\u00eda-jose",
-    "instagram": "",
-    "website": "",
-    "luma_bio": ""
-  },
-  {
-    "name": "Jose Martinez",
-    "bio": "",
-    "twitter": "",
-    "tw_followers": 0,
-    "tw_verified": false,
-    "tw_location": "",
-    "linkedin": "",
-    "instagram": "",
-    "website": "",
-    "luma_bio": ""
-  },
-  {
-    "name": "Josu\u00e9 Padilla",
-    "bio": "",
-    "twitter": "",
-    "tw_followers": 0,
-    "tw_verified": false,
-    "tw_location": "",
-    "linkedin": "",
-    "instagram": "",
-    "website": "",
-    "luma_bio": ""
-  },
-  {
-    "name": "Juan Carlos Ch\u00e1vez",
-    "bio": "",
-    "twitter": "",
-    "tw_followers": 0,
-    "tw_verified": false,
-    "tw_location": "",
-    "linkedin": "",
-    "instagram": "",
-    "website": "",
-    "luma_bio": ""
-  },
-  {
-    "name": "Juan Cervantes",
-    "bio": "Mariachis Valley ",
-    "twitter": "",
-    "tw_followers": 0,
-    "tw_verified": false,
-    "tw_location": "",
-    "linkedin": "/in/juanm-cervantes",
-    "instagram": "",
-    "website": "",
-    "luma_bio": "Mariachis Valley "
-  },
-  {
-    "name": "Juan Martinez",
-    "bio": "Frontend Developer & Coffee Enthusiast",
-    "twitter": "juandadotdev",
-    "tw_followers": 0,
-    "tw_verified": false,
-    "tw_location": "",
-    "linkedin": "/in/juandadev",
-    "instagram": "",
-    "website": "https://www.juanda.dev/",
-    "luma_bio": "Frontend Developer & Coffee Enthusiast"
-  },
-  {
-    "name": "Juan Ramon Marcial",
-    "bio": "",
-    "twitter": "",
-    "tw_followers": 0,
-    "tw_verified": false,
-    "tw_location": "",
-    "linkedin": "",
-    "instagram": "",
-    "website": "",
-    "luma_bio": ""
-  },
-  {
-    "name": "Juan  Salazar",
-    "bio": "",
-    "twitter": "",
-    "tw_followers": 0,
-    "tw_verified": false,
-    "tw_location": "",
-    "linkedin": "/in/juan-salazar-92a57b21a",
-    "instagram": "",
-    "website": "",
-    "luma_bio": ""
-  },
-  {
-    "name": "Julio Gontor",
-    "bio": "",
-    "twitter": "",
-    "tw_followers": 0,
-    "tw_verified": false,
-    "tw_location": "",
-    "linkedin": "",
-    "instagram": "",
-    "website": "",
-    "luma_bio": ""
-  },
-  {
-    "name": "Julio Silva",
-    "bio": "",
-    "twitter": "",
-    "tw_followers": 0,
-    "tw_verified": false,
-    "tw_location": "",
-    "linkedin": "",
-    "instagram": "",
-    "website": "",
-    "luma_bio": ""
-  },
-  {
-    "name": "Karen V",
-    "bio": "",
-    "twitter": "Karenkether",
-    "tw_followers": 0,
-    "tw_verified": false,
-    "tw_location": "",
-    "linkedin": "/in/vallekaren",
-    "instagram": "ketherlabs",
-    "website": "",
-    "luma_bio": ""
-  },
-  {
-    "name": "Kevin Llamas Acal\u00e1",
+    "name": "Kira Moshal",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -1128,7 +876,7 @@
     "luma_bio": "Principal AI Data Software Solution Developer"
   },
   {
-    "name": "Laura Lucia Leal S\u00e1nchez",
+    "name": "Leo Sojref",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -1140,7 +888,7 @@
     "luma_bio": ""
   },
   {
-    "name": "Luis Diaz",
+    "name": "Levy Agaronnik",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -1152,7 +900,31 @@
     "luma_bio": ""
   },
   {
-    "name": "Luis Garcia",
+    "name": "Lior Libman",
+    "bio": "",
+    "twitter": "",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "/in/libman",
+    "instagram": "",
+    "website": "",
+    "luma_bio": ""
+  },
+  {
+    "name": "Maggi",
+    "bio": "Event Creator",
+    "twitter": "",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "",
+    "instagram": "",
+    "website": "",
+    "luma_bio": "Event Creator"
+  },
+  {
+    "name": "Marcia Zeitoune Janzen",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -1164,7 +936,7 @@
     "luma_bio": ""
   },
   {
-    "name": "Luis Gonzalez",
+    "name": "Mark Stauber",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -1176,19 +948,19 @@
     "luma_bio": ""
   },
   {
-    "name": "Luis Sanchez",
+    "name": "Martin",
     "bio": "",
-    "twitter": "luisjorgesh",
+    "twitter": "",
     "tw_followers": 0,
     "tw_verified": false,
     "tw_location": "",
-    "linkedin": "/in/luisj-sanchez",
+    "linkedin": "/in/martin-levy-01b22827",
     "instagram": "",
     "website": "",
     "luma_bio": ""
   },
   {
-    "name": "Mak Gutierrez",
+    "name": "Max Rose",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -1200,19 +972,7 @@
     "luma_bio": ""
   },
   {
-    "name": "Manuel de la Torre",
-    "bio": "",
-    "twitter": "",
-    "tw_followers": 0,
-    "tw_verified": false,
-    "tw_location": "",
-    "linkedin": "/in/manuelmhtr",
-    "instagram": "",
-    "website": "",
-    "luma_bio": ""
-  },
-  {
-    "name": "Marco Preciado",
+    "name": "Menachem Cowen",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -1224,7 +984,7 @@
     "luma_bio": ""
   },
   {
-    "name": "Maria Fernanda Gutierrez Huerta",
+    "name": "Menachem Hecht",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -1236,7 +996,19 @@
     "luma_bio": ""
   },
   {
-    "name": "maribel garcia",
+    "name": "Michael AMAR",
+    "bio": "Chairman Paris Blockchain Week & RAISE Summit",
+    "twitter": "amarmic",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "/in/amarmic",
+    "instagram": "",
+    "website": "",
+    "luma_bio": "Chairman Paris Blockchain Week & RAISE Summit"
+  },
+  {
+    "name": "Michael Goffredi",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -1248,7 +1020,31 @@
     "luma_bio": ""
   },
   {
-    "name": "Martin Angel Carrizalez Pi\u00f1a",
+    "name": "Miriam Bashan",
+    "bio": "",
+    "twitter": "",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "/in/miriam-bashan",
+    "instagram": "",
+    "website": "",
+    "luma_bio": ""
+  },
+  {
+    "name": "Mona Cohen",
+    "bio": "AI Driven Headhunter",
+    "twitter": "",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "/in/monacohen",
+    "instagram": "monalizacohen",
+    "website": "",
+    "luma_bio": "AI Driven Headhunter"
+  },
+  {
+    "name": "Mordy",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -1260,31 +1056,19 @@
     "luma_bio": ""
   },
   {
-    "name": "Marysol Sanchez",
+    "name": "Moshe Schlussel",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
     "tw_verified": false,
     "tw_location": "",
-    "linkedin": "/in/marysols",
+    "linkedin": "/in/moshe-schlussel-5b87441ab",
     "instagram": "",
     "website": "",
     "luma_bio": ""
   },
   {
-    "name": "Mateo Rodr\u00edguez Robles",
-    "bio": "",
-    "twitter": "",
-    "tw_followers": 0,
-    "tw_verified": false,
-    "tw_location": "",
-    "linkedin": "",
-    "instagram": "",
-    "website": "",
-    "luma_bio": ""
-  },
-  {
-    "name": "Mauricio Alejandro Cabrera Arellano",
+    "name": "Myron",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -1296,7 +1080,31 @@
     "luma_bio": ""
   },
   {
-    "name": "Mauro Parra",
+    "name": "Natanel Niazoff",
+    "bio": "",
+    "twitter": "niazoff",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "/in/niazoff",
+    "instagram": "",
+    "website": "https://niazoff.com",
+    "luma_bio": ""
+  },
+  {
+    "name": "Nizan Ifrach",
+    "bio": "",
+    "twitter": "",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "/in/nizan-ifrach-5361a2117",
+    "instagram": "",
+    "website": "",
+    "luma_bio": ""
+  },
+  {
+    "name": "Ofer Shemesh",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -1308,7 +1116,19 @@
     "luma_bio": ""
   },
   {
-    "name": "Mayra vera",
+    "name": "Ohad Gliksman",
+    "bio": "",
+    "twitter": "OhadGliksmanHeb",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "/in/ohadgliksman",
+    "instagram": "",
+    "website": "",
+    "luma_bio": ""
+  },
+  {
+    "name": "ohad koren",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -1320,19 +1140,19 @@
     "luma_bio": ""
   },
   {
-    "name": "mektigboy",
-    "bio": "chief shilling officer @ rust. high-frequency trading internet monies.",
-    "twitter": "mektigboy",
+    "name": "omer zaid",
+    "bio": "",
+    "twitter": "",
     "tw_followers": 0,
     "tw_verified": false,
     "tw_location": "",
-    "linkedin": "",
+    "linkedin": "/in/omerzaid",
     "instagram": "",
-    "website": "https://mektigboy.xyz",
-    "luma_bio": "chief shilling officer @ rust. high-frequency trading internet monies."
+    "website": "",
+    "luma_bio": ""
   },
   {
-    "name": "Miriam",
+    "name": "Omry Oz",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -1344,7 +1164,19 @@
     "luma_bio": ""
   },
   {
-    "name": "Moises de Jesus Juarez Alvarez",
+    "name": "Ophere Evan",
+    "bio": "",
+    "twitter": "",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "/in/ophere-evan",
+    "instagram": "",
+    "website": "",
+    "luma_bio": ""
+  },
+  {
+    "name": "Or Aharon",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -1356,7 +1188,7 @@
     "luma_bio": ""
   },
   {
-    "name": "Neysa Santoscoy",
+    "name": "Or Gany",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -1368,67 +1200,55 @@
     "luma_bio": ""
   },
   {
-    "name": "Oscar Mora",
+    "name": "orit.b.t@gmail.com",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
     "tw_verified": false,
     "tw_location": "",
-    "linkedin": "/in/ing-oscar-mora",
+    "linkedin": "/in/oritbt",
     "instagram": "",
     "website": "",
     "luma_bio": ""
   },
   {
-    "name": "Oscar Roman",
+    "name": "Oz Tamir",
+    "bio": "\u00af\\_(\u30c4)_/\u00af",
+    "twitter": "oztamir",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "/in/oztamir",
+    "instagram": "",
+    "website": "https://oztamir.com",
+    "luma_bio": "\u00af\\_(\u30c4)_/\u00af"
+  },
+  {
+    "name": "Perri Finkelstein",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
     "tw_verified": false,
     "tw_location": "",
-    "linkedin": "/in/adrianromanov",
-    "instagram": "adrian_.romanov",
-    "website": "https://linktr.ee/adrian.romanov",
+    "linkedin": "/in/perrifinkelstein",
+    "instagram": "",
+    "website": "",
     "luma_bio": ""
   },
   {
-    "name": "Ovidio Escobedo",
+    "name": "Peter Blond",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
     "tw_verified": false,
     "tw_location": "",
-    "linkedin": "/in/ovidio",
+    "linkedin": "/in/amit-james-gelblum-364b8531a",
     "instagram": "",
     "website": "",
     "luma_bio": ""
   },
   {
-    "name": "Pedro Garcia",
-    "bio": "",
-    "twitter": "",
-    "tw_followers": 0,
-    "tw_verified": false,
-    "tw_location": "",
-    "linkedin": "",
-    "instagram": "",
-    "website": "",
-    "luma_bio": ""
-  },
-  {
-    "name": "Pepe",
-    "bio": "",
-    "twitter": "pepevardel94",
-    "tw_followers": 0,
-    "tw_verified": false,
-    "tw_location": "",
-    "linkedin": "",
-    "instagram": "",
-    "website": "",
-    "luma_bio": ""
-  },
-  {
-    "name": "PEPE GONZALEZ",
+    "name": "Raphael Berrebi",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -1440,7 +1260,31 @@
     "luma_bio": ""
   },
   {
-    "name": "Perro Dinero",
+    "name": "Rebecca Laskin",
+    "bio": "",
+    "twitter": "",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "",
+    "instagram": "Bex__inthecity",
+    "website": "",
+    "luma_bio": ""
+  },
+  {
+    "name": "Remagine Ventures",
+    "bio": "",
+    "twitter": "",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "/in/kevinbaxpehler",
+    "instagram": "",
+    "website": "",
+    "luma_bio": ""
+  },
+  {
+    "name": "Reuven",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -1452,7 +1296,7 @@
     "luma_bio": ""
   },
   {
-    "name": "Rafael Ibarra",
+    "name": "rifka buls",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -1464,7 +1308,19 @@
     "luma_bio": ""
   },
   {
-    "name": "Raul Ruiz",
+    "name": "Romy Behar",
+    "bio": "",
+    "twitter": "",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "/in/romybehar",
+    "instagram": "",
+    "website": "",
+    "luma_bio": ""
+  },
+  {
+    "name": "Romy Haik",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -1476,7 +1332,43 @@
     "luma_bio": ""
   },
   {
-    "name": "Ricardo Maga\u00f1a",
+    "name": "Ron Ben Aharon",
+    "bio": "",
+    "twitter": "",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "/in/ronbenaharon",
+    "instagram": "",
+    "website": "",
+    "luma_bio": ""
+  },
+  {
+    "name": "Ron Zaidman",
+    "bio": "",
+    "twitter": "",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "/in/ron-zaidman",
+    "instagram": "",
+    "website": "",
+    "luma_bio": ""
+  },
+  {
+    "name": "Samuel Benzaquen",
+    "bio": "",
+    "twitter": "",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "/in/sbenzaquen",
+    "instagram": "",
+    "website": "",
+    "luma_bio": ""
+  },
+  {
+    "name": "Sam Weinstein",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -1488,7 +1380,7 @@
     "luma_bio": ""
   },
   {
-    "name": "Rodrigo Cano",
+    "name": "Saul Sadka",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -1500,19 +1392,7 @@
     "luma_bio": ""
   },
   {
-    "name": "Rogelio Hernandez",
-    "bio": "",
-    "twitter": "",
-    "tw_followers": 0,
-    "tw_verified": false,
-    "tw_location": "",
-    "linkedin": "/in/rogeliomerino",
-    "instagram": "",
-    "website": "",
-    "luma_bio": ""
-  },
-  {
-    "name": "Roman Pomares",
+    "name": "Sean",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -1524,7 +1404,31 @@
     "luma_bio": ""
   },
   {
-    "name": "Royer Vazquez",
+    "name": "Selah Ventures",
+    "bio": "",
+    "twitter": "",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "/in/levanonadi",
+    "instagram": "",
+    "website": "https://www.selahvc.com",
+    "luma_bio": ""
+  },
+  {
+    "name": "Serena Schneier",
+    "bio": "",
+    "twitter": "",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "/in/serena-schneier-7011b6137",
+    "instagram": "",
+    "website": "",
+    "luma_bio": ""
+  },
+  {
+    "name": "Shahar Haviv",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -1536,7 +1440,19 @@
     "luma_bio": ""
   },
   {
-    "name": "Ruben Hernandez",
+    "name": "Shai Bouju",
+    "bio": "Tech Founder - Fintech | Gaming",
+    "twitter": "",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "/in/shai-bouju",
+    "instagram": "",
+    "website": "",
+    "luma_bio": "Tech Founder - Fintech | Gaming"
+  },
+  {
+    "name": "Shane Friedman",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -1548,19 +1464,43 @@
     "luma_bio": ""
   },
   {
-    "name": "Ruy",
+    "name": "Sharon Menashe",
     "bio": "",
-    "twitter": "ruycer",
+    "twitter": "",
     "tw_followers": 0,
     "tw_verified": false,
     "tw_location": "",
-    "linkedin": "/in/ruycer",
+    "linkedin": "/in/sharonmenashe",
     "instagram": "",
     "website": "",
     "luma_bio": ""
   },
   {
-    "name": "Salvador CN",
+    "name": "Shimon Rosen",
+    "bio": "",
+    "twitter": "sir",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "/in/shimondotcom",
+    "instagram": "captainplanet",
+    "website": "",
+    "luma_bio": ""
+  },
+  {
+    "name": "Shir Dayan",
+    "bio": "",
+    "twitter": "",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "/in/shirdayan",
+    "instagram": "",
+    "website": "",
+    "luma_bio": ""
+  },
+  {
+    "name": "Shmuel Tauby",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -1572,7 +1512,31 @@
     "luma_bio": ""
   },
   {
-    "name": "Sebas Osorno",
+    "name": "Sigrid Jin",
+    "bio": "",
+    "twitter": "sigridjin_eth",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "/in/sigridjineth",
+    "instagram": "",
+    "website": "",
+    "luma_bio": ""
+  },
+  {
+    "name": "Tal Shriki",
+    "bio": "",
+    "twitter": "",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "/in/tal-shriki",
+    "instagram": "",
+    "website": "",
+    "luma_bio": ""
+  },
+  {
+    "name": "Tamar Averbuch",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -1584,55 +1548,19 @@
     "luma_bio": ""
   },
   {
-    "name": "Sebastian Rojas Salazar",
+    "name": "Theo Henry",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
     "tw_verified": false,
     "tw_location": "",
-    "linkedin": "",
+    "linkedin": "/in/theo-henry",
     "instagram": "",
     "website": "",
     "luma_bio": ""
   },
   {
-    "name": "Sebastien Conejo",
-    "bio": "CEO of Manifest",
-    "twitter": "sebconejo",
-    "tw_followers": 0,
-    "tw_verified": false,
-    "tw_location": "",
-    "linkedin": "/in/sebastien-conejo",
-    "instagram": "",
-    "website": "",
-    "luma_bio": "CEO of Manifest"
-  },
-  {
-    "name": "Sergio Jair L\u00f3pez N\u00fa\u00f1ez",
-    "bio": "",
-    "twitter": "",
-    "tw_followers": 0,
-    "tw_verified": false,
-    "tw_location": "",
-    "linkedin": "/in/sergio-jair-lopez-nunez",
-    "instagram": "",
-    "website": "",
-    "luma_bio": ""
-  },
-  {
-    "name": "Siomara Jimenez",
-    "bio": "",
-    "twitter": "",
-    "tw_followers": 0,
-    "tw_verified": false,
-    "tw_location": "",
-    "linkedin": "",
-    "instagram": "",
-    "website": "",
-    "luma_bio": ""
-  },
-  {
-    "name": "Susana",
+    "name": "Tomer Dean",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -1656,7 +1584,7 @@
     "luma_bio": ""
   },
   {
-    "name": "Victor Romero",
+    "name": "Toot",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -1668,7 +1596,7 @@
     "luma_bio": ""
   },
   {
-    "name": "Xavier",
+    "name": "Toot Shani",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
@@ -1680,7 +1608,187 @@
     "luma_bio": ""
   },
   {
-    "name": "Yessica Varela V\u00e1zquez",
+    "name": "Uri Ariel",
+    "bio": "",
+    "twitter": "",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "/in/uri-chen",
+    "instagram": "",
+    "website": "",
+    "luma_bio": ""
+  },
+  {
+    "name": "Uriel Cohen",
+    "bio": "",
+    "twitter": "",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "",
+    "instagram": "",
+    "website": "",
+    "luma_bio": ""
+  },
+  {
+    "name": "Uriel Maslansky",
+    "bio": "",
+    "twitter": "",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "/in/uriel-maslansky",
+    "instagram": "",
+    "website": "",
+    "luma_bio": ""
+  },
+  {
+    "name": "Vadim",
+    "bio": "",
+    "twitter": "",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "/in/vioffe",
+    "instagram": "",
+    "website": "",
+    "luma_bio": ""
+  },
+  {
+    "name": "Yaakov Goldsmith",
+    "bio": "",
+    "twitter": "",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "",
+    "instagram": "",
+    "website": "",
+    "luma_bio": ""
+  },
+  {
+    "name": "Yarden Dor",
+    "bio": "",
+    "twitter": "",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "/in/yardendor",
+    "instagram": "",
+    "website": "",
+    "luma_bio": ""
+  },
+  {
+    "name": "Yoav Amit",
+    "bio": "",
+    "twitter": "",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "",
+    "instagram": "",
+    "website": "",
+    "luma_bio": ""
+  },
+  {
+    "name": "Yoav Tietz",
+    "bio": "",
+    "twitter": "YtEljefe1",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "/in/yoav-tietz",
+    "instagram": "",
+    "website": "",
+    "luma_bio": ""
+  },
+  {
+    "name": "Yona Steinman",
+    "bio": "",
+    "twitter": "",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "",
+    "instagram": "",
+    "website": "",
+    "luma_bio": ""
+  },
+  {
+    "name": "Yosef",
+    "bio": "",
+    "twitter": "",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "",
+    "instagram": "",
+    "website": "",
+    "luma_bio": ""
+  },
+  {
+    "name": "Yuval I Gonczarowski",
+    "bio": "",
+    "twitter": "",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "",
+    "instagram": "",
+    "website": "",
+    "luma_bio": ""
+  },
+  {
+    "name": "Ziv Palas",
+    "bio": "",
+    "twitter": "",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "",
+    "instagram": "",
+    "website": "",
+    "luma_bio": ""
+  },
+  {
+    "name": "Zvi Biran (Wexlstein)",
+    "bio": "",
+    "twitter": "",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "/in/zvi-wexlstein",
+    "instagram": "",
+    "website": "",
+    "luma_bio": ""
+  },
+  {
+    "name": "\u05d0\u05d9\u05d9\u05d6\u05e7 \u05e1\u05d9\u05e0\u05d2\u05e8",
+    "bio": "",
+    "twitter": "",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "/in/isaac-singer-10b950149",
+    "instagram": "",
+    "website": "",
+    "luma_bio": ""
+  },
+  {
+    "name": "\u05d9\u05d5\u05e0\u05ea\u05df \u05e4\u05d9\u05dc\u05e0\u05d9\u05e7",
+    "bio": "",
+    "twitter": "",
+    "tw_followers": 0,
+    "tw_verified": false,
+    "tw_location": "",
+    "linkedin": "/in/jonathan-pilnick-b70a63354",
+    "instagram": "",
+    "website": "",
+    "luma_bio": ""
+  },
+  {
+    "name": "\u05de\u05d9\u05db\u05d0\u05dc \u05d0\u05d4\u05e8\u05d5\u05df \u05d9\u05d4\u05d9\u05d3",
     "bio": "",
     "twitter": "",
     "tw_followers": 0,
