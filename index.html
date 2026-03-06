@@ -16,43 +16,55 @@
 <meta name="twitter:image" content="https://owencoonahan.github.io/clawcon-directory/og-image.jpg">
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
+:root {
+  --bg: #fafafa; --bg-card: white; --bg-hover: #f9f9f9; --bg-thead: #f9f9f9;
+  --text: #111; --text-secondary: #666; --text-muted: #888; --text-bio: #555;
+  --border: #e5e5e5; --border-light: #f0f0f0; --badge-bg: #f0f0f0; --badge-text: #666;
+  --input-bg: white; --active-bg: #111; --active-text: white;
+}
+html.dark {
+  --bg: #0a0a0a; --bg-card: #141414; --bg-hover: #1a1a1a; --bg-thead: #111;
+  --text: #e5e5e5; --text-secondary: #999; --text-muted: #777; --text-bio: #aaa;
+  --border: #2a2a2a; --border-light: #1e1e1e; --badge-bg: #222; --badge-text: #999;
+  --input-bg: #141414; --active-bg: #e5e5e5; --active-text: #0a0a0a;
+}
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: 'Geist', -apple-system, sans-serif; background: #fafafa; color: #111; }
+body { font-family: 'Geist', -apple-system, sans-serif; background: var(--bg); color: var(--text); transition: background 0.2s, color 0.2s; }
 .container { max-width: 1280px; margin: 0 auto; padding: 24px; }
-header { padding: 32px 0 24px; border-bottom: 1px solid #e5e5e5; margin-bottom: 24px; }
+header { padding: 32px 0 24px; border-bottom: 1px solid var(--border); margin-bottom: 24px; }
 header h1 { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; }
-header p { color: #666; margin-top: 6px; font-size: 15px; }
-.city-tabs { display: flex; gap: 0; margin-bottom: 24px; border-bottom: 2px solid #e5e5e5; overflow-x: auto; }
-.city-tab { padding: 12px 20px; font-size: 14px; font-family: 'Geist', sans-serif; cursor: pointer; border: none; background: none; color: #888; font-weight: 500; border-bottom: 2px solid transparent; margin-bottom: -2px; transition: all 0.15s; white-space: nowrap; }
-.city-tab:hover { color: #333; }
-.city-tab.active { color: #111; border-bottom-color: #111; }
-.city-tab .count { font-family: 'Geist Mono', monospace; font-size: 11px; color: #aaa; margin-left: 6px; }
-.city-tab.active .count { color: #666; }
+header p { color: var(--text-secondary); margin-top: 6px; font-size: 15px; }
+.city-tabs { display: flex; gap: 0; margin-bottom: 24px; border-bottom: 2px solid var(--border); overflow-x: auto; }
+.city-tab { padding: 12px 20px; font-size: 14px; font-family: 'Geist', sans-serif; cursor: pointer; border: none; background: none; color: var(--text-muted); font-weight: 500; border-bottom: 2px solid transparent; margin-bottom: -2px; transition: all 0.15s; white-space: nowrap; }
+.city-tab:hover { color: var(--text); }
+.city-tab.active { color: var(--text); border-bottom-color: var(--text); }
+.city-tab .count { font-family: 'Geist Mono', monospace; font-size: 11px; color: var(--text-muted); margin-left: 6px; }
+.city-tab.active .count { color: var(--text-secondary); }
 .stats { display: flex; gap: 16px; margin-bottom: 20px; flex-wrap: wrap; }
-.stat { background: white; border: 1px solid #e5e5e5; border-radius: 8px; padding: 10px 16px; }
+.stat { background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 10px 16px; }
 .stat-num { font-size: 22px; font-weight: 700; font-family: 'Geist Mono', monospace; }
-.stat-label { font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 2px; }
+.stat-label { font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; margin-top: 2px; }
 .controls { display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap; align-items: center; }
-.search { flex: 1; min-width: 250px; padding: 10px 16px; border: 1px solid #e5e5e5; border-radius: 8px; font-size: 14px; font-family: 'Geist', sans-serif; outline: none; background: white; }
-.search:focus { border-color: #111; }
-.filter-btn { padding: 7px 14px; border: 1px solid #e5e5e5; border-radius: 6px; font-size: 12px; font-family: 'Geist', sans-serif; cursor: pointer; background: white; transition: all 0.15s; }
-.filter-btn:hover { border-color: #111; }
-.filter-btn.active { background: #111; color: white; border-color: #111; }
-.sort-select { padding: 8px 12px; border: 1px solid #e5e5e5; border-radius: 6px; font-size: 13px; font-family: 'Geist', sans-serif; background: white; cursor: pointer; }
-.result-count { font-size: 13px; color: #888; margin-bottom: 12px; font-family: 'Geist Mono', monospace; }
-table { width: 100%; border-collapse: collapse; background: white; border: 1px solid #e5e5e5; border-radius: 8px; overflow: hidden; }
-thead { background: #f9f9f9; }
-th { text-align: left; padding: 10px 14px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: #888; font-weight: 500; border-bottom: 1px solid #e5e5e5; user-select: none; }
-td { padding: 10px 14px; font-size: 13px; border-bottom: 1px solid #f0f0f0; vertical-align: top; }
+.search { flex: 1; min-width: 250px; padding: 10px 16px; border: 1px solid var(--border); border-radius: 8px; font-size: 14px; font-family: 'Geist', sans-serif; outline: none; background: var(--input-bg); color: var(--text); }
+.search:focus { border-color: var(--text); }
+.filter-btn { padding: 7px 14px; border: 1px solid var(--border); border-radius: 6px; font-size: 12px; font-family: 'Geist', sans-serif; cursor: pointer; background: var(--bg-card); color: var(--text); transition: all 0.15s; }
+.filter-btn:hover { border-color: var(--text); }
+.filter-btn.active { background: var(--active-bg); color: var(--active-text); border-color: var(--active-bg); }
+.sort-select { padding: 8px 12px; border: 1px solid var(--border); border-radius: 6px; font-size: 13px; font-family: 'Geist', sans-serif; background: var(--input-bg); color: var(--text); cursor: pointer; }
+.result-count { font-size: 13px; color: var(--text-muted); margin-bottom: 12px; font-family: 'Geist Mono', monospace; }
+table { width: 100%; border-collapse: collapse; background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+thead { background: var(--bg-thead); }
+th { text-align: left; padding: 10px 14px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-muted); font-weight: 500; border-bottom: 1px solid var(--border); user-select: none; }
+td { padding: 10px 14px; font-size: 13px; border-bottom: 1px solid var(--border-light); vertical-align: top; }
 tr:last-child td { border-bottom: none; }
-tr:hover { background: #f9f9f9; }
+tr:hover { background: var(--bg-hover); }
 .name-cell { font-weight: 500; white-space: nowrap; }
-.bio-cell { color: #555; max-width: 320px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.city-badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 10px; font-weight: 500; background: #f0f0f0; color: #666; margin-left: 6px; }
+.bio-cell { color: var(--text-bio); max-width: 320px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.city-badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 10px; font-weight: 500; background: var(--badge-bg); color: var(--badge-text); margin-left: 6px; }
 .social-links { display: flex; gap: 5px; }
-.social-links a { display: inline-flex; align-items: center; justify-content: center; width: 26px; height: 26px; border-radius: 4px; border: 1px solid #e5e5e5; color: #555; text-decoration: none; font-size: 11px; transition: all 0.15s; }
-.social-links a:hover { border-color: #111; color: #111; }
-.followers { font-family: 'Geist Mono', monospace; font-size: 12px; color: #888; }
+.social-links a { display: inline-flex; align-items: center; justify-content: center; width: 26px; height: 26px; border-radius: 4px; border: 1px solid var(--border); color: var(--text-bio); text-decoration: none; font-size: 11px; transition: all 0.15s; }
+.social-links a:hover { border-color: var(--text); color: var(--text); }
+.followers { font-family: 'Geist Mono', monospace; font-size: 12px; color: var(--text-muted); }
 .verified { color: #1d9bf0; font-size: 11px; }
 .tag { display: inline-block; padding: 2px 7px; border-radius: 4px; font-size: 10px; font-weight: 500; margin: 1px 2px; }
 .tag-founder { background: #f0f7ff; color: #0066cc; }
@@ -65,6 +77,18 @@ tr:hover { background: #f9f9f9; }
 .tag-marketing { background: #fdf2f8; color: #db2777; }
 .tag-research { background: #f0f9ff; color: #0369a1; }
 .tag-designer { background: #f5f0ff; color: #6633cc; }
+html.dark .tag-founder { background: #0d2240; color: #5b9cf0; }
+html.dark .tag-engineer { background: #0a2618; color: #4ade80; }
+html.dark .tag-vc { background: #2a1508; color: #f59e0b; }
+html.dark .tag-ai { background: #1a0d30; color: #a78bfa; }
+html.dark .tag-crypto { background: #2a1d08; color: #fbbf24; }
+html.dark .tag-student { background: #0a2618; color: #4ade80; }
+html.dark .tag-pm { background: #2a0808; color: #f87171; }
+html.dark .tag-marketing { background: #2a0820; color: #f472b6; }
+html.dark .tag-research { background: #082030; color: #38bdf8; }
+html.dark .tag-designer { background: #1a0d30; color: #a78bfa; }
+.theme-toggle { position: fixed; top: 16px; right: 16px; z-index: 100; width: 36px; height: 36px; border-radius: 8px; border: 1px solid var(--border); background: var(--bg-card); color: var(--text); cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 18px; transition: all 0.2s; }
+.theme-toggle:hover { border-color: var(--text); }
 .tag-student { background: #fff8f0; color: #996600; }
 .tag-pm { background: #f0ffff; color: #008888; }
 .empty { text-align: center; padding: 40px; color: #888; }
@@ -79,10 +103,11 @@ tr:hover { background: #f9f9f9; }
 </style>
 </head>
 <body>
+<button class="theme-toggle" id="themeToggle" title="Toggle dark mode">🌙</button>
 <div class="container">
   <header>
     <h1>ClawCon — Global Attendee Directory</h1>
-    <p>Built by <a href="https://x.com/OwenCoonahan" target="_blank" style="color:#111;text-decoration:none;border-bottom:1px solid #ccc;font-weight:500;">Owen Coonahan</a></p>
+    <p>Built by <a href="https://x.com/OwenCoonahan" target="_blank" style="color:var(--text);text-decoration:none;border-bottom:1px solid var(--border);font-weight:500;">Owen Coonahan</a></p>
   </header>
   
   <div class="city-tabs" id="cityTabs"></div>
@@ -365,6 +390,22 @@ document.getElementById('downloadCsv').addEventListener('click', () => {
   a.click();
   URL.revokeObjectURL(url);
 });
+
+// Dark mode toggle
+const themeToggle = document.getElementById('themeToggle');
+function setTheme(dark) {
+  document.documentElement.classList.toggle('dark', dark);
+  themeToggle.textContent = dark ? '☀️' : '🌙';
+  localStorage.setItem('theme', dark ? 'dark' : 'light');
+}
+themeToggle.addEventListener('click', () => {
+  setTheme(!document.documentElement.classList.contains('dark'));
+});
+// Init from localStorage or system preference
+const saved = localStorage.getItem('theme');
+if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+  setTheme(true);
+}
 
 loadAllData();
 </script>
