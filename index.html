@@ -79,6 +79,7 @@ tr:hover { background: #f9f9f9; }
       <option value="name">Sort: Name A→Z</option>
       <option value="followers">Sort: Followers ↓</option>
     </select>
+    <button class="filter-btn" id="downloadCsv" style="font-weight:500;">⬇ Download CSV</button>
   </div>
   
   <div class="controls" id="filters">
@@ -283,6 +284,54 @@ document.querySelectorAll('.filter-btn').forEach(btn => {
     currentFilter = btn.dataset.filter;
     render();
   });
+});
+
+document.getElementById('downloadCsv').addEventListener('click', () => {
+  let data = getData();
+  let filtered = data.filter(p => {
+    if (currentSearch) {
+      const s = currentSearch.toLowerCase();
+      const hay = (p.name + ' ' + (p.bio||'') + ' ' + (p.luma_bio||'') + ' ' + (p.tw_location||'') + ' ' + (p.twitter||'') + ' ' + (p.linkedin||'')).toLowerCase();
+      if (!hay.includes(s)) return false;
+    }
+    const tags = detectTags(p);
+    switch(currentFilter) {
+      case 'has-twitter': return !!p.twitter;
+      case 'has-linkedin': return !!p.linkedin;
+      case 'has-bio': return !!(p.bio || p.luma_bio);
+      case 'verified': return p.tw_verified;
+      case 'founder': return tags.includes('founder');
+      case 'engineer': return tags.includes('engineer');
+      case 'vc': return tags.includes('vc');
+      case 'designer': return tags.includes('designer');
+      default: return true;
+    }
+  });
+  if (currentSort === 'followers') filtered.sort((a,b) => (b.tw_followers||0) - (a.tw_followers||0));
+  else filtered.sort((a,b) => a.name.localeCompare(b.name));
+  
+  const esc = v => '"' + String(v||'').replace(/"/g,'""') + '"';
+  const headers = ['Name','Bio','Twitter Bio','Luma Bio','Twitter','Followers','Verified','Location','LinkedIn','Instagram','Website','Luma Profile'];
+  const rows = filtered.map(p => [
+    esc(p.name), esc(p.bio), esc(p.tw_bio), esc(p.luma_bio),
+    esc(p.twitter ? 'https://x.com/'+p.twitter : ''),
+    p.tw_followers||'', p.tw_verified?'Yes':'',
+    esc(p.tw_location),
+    esc(p.linkedin ? 'https://linkedin.com'+p.linkedin : ''),
+    esc(p.instagram && p.instagram.toLowerCase()!=='yes' ? 'https://instagram.com/'+p.instagram : ''),
+    esc(p.website), esc(p.luma_url)
+  ].join(','));
+  
+  const csv = [headers.join(','), ...rows].join('\n');
+  const blob = new Blob([csv], {type:'text/csv'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  const cityLabel = currentCity === 'all' ? 'all-cities' : currentCity;
+  const filterLabel = currentFilter !== 'all' ? '-' + currentFilter : '';
+  a.download = `clawcon-${cityLabel}${filterLabel}.csv`;
+  a.click();
+  URL.revokeObjectURL(url);
 });
 
 loadAllData();
