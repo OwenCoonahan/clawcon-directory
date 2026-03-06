@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ClawCon NYC — Attendee Directory</title>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Geist', -apple-system, sans-serif; background: #fafafa; color: #111; }
+.container { max-width: 1200px; margin: 0 auto; padding: 24px; }
+header { padding: 40px 0 32px; border-bottom: 1px solid #e5e5e5; margin-bottom: 24px; }
+header h1 { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; }
+header p { color: #666; margin-top: 6px; font-size: 15px; }
+.stats { display: flex; gap: 24px; margin-top: 16px; flex-wrap: wrap; }
+.stat { background: white; border: 1px solid #e5e5e5; border-radius: 8px; padding: 12px 20px; }
+.stat-num { font-size: 24px; font-weight: 700; font-family: 'Geist Mono', monospace; }
+.stat-label { font-size: 12px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 2px; }
+.controls { display: flex; gap: 12px; margin-bottom: 20px; flex-wrap: wrap; align-items: center; }
+.search { flex: 1; min-width: 250px; padding: 10px 16px; border: 1px solid #e5e5e5; border-radius: 8px; font-size: 14px; font-family: 'Geist', sans-serif; outline: none; background: white; }
+.search:focus { border-color: #111; }
+.filter-btn { padding: 8px 16px; border: 1px solid #e5e5e5; border-radius: 6px; font-size: 13px; font-family: 'Geist', sans-serif; cursor: pointer; background: white; transition: all 0.15s; }
+.filter-btn:hover { border-color: #111; }
+.filter-btn.active { background: #111; color: white; border-color: #111; }
+.sort-select { padding: 8px 12px; border: 1px solid #e5e5e5; border-radius: 6px; font-size: 13px; font-family: 'Geist', sans-serif; background: white; cursor: pointer; }
+.count { font-size: 13px; color: #888; margin-bottom: 12px; font-family: 'Geist Mono', monospace; }
+table { width: 100%; border-collapse: collapse; background: white; border: 1px solid #e5e5e5; border-radius: 8px; overflow: hidden; }
+thead { background: #f9f9f9; }
+th { text-align: left; padding: 10px 14px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: #888; font-weight: 500; border-bottom: 1px solid #e5e5e5; cursor: pointer; user-select: none; }
+th:hover { color: #111; }
+td { padding: 10px 14px; font-size: 13px; border-bottom: 1px solid #f0f0f0; vertical-align: top; }
+tr:last-child td { border-bottom: none; }
+tr:hover { background: #f9f9f9; }
+.name-cell { font-weight: 500; }
+.bio-cell { color: #555; max-width: 300px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.social-links { display: flex; gap: 6px; }
+.social-links a { display: inline-flex; align-items: center; justify-content: center; width: 26px; height: 26px; border-radius: 4px; border: 1px solid #e5e5e5; color: #555; text-decoration: none; font-size: 11px; transition: all 0.15s; }
+.social-links a:hover { border-color: #111; color: #111; }
+.social-links a.tw { }
+.social-links a.li { }
+.social-links a.ig { }
+.social-links a.web { }
+.followers { font-family: 'Geist Mono', monospace; font-size: 12px; color: #888; }
+.verified { color: #1d9bf0; font-size: 11px; }
+.tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 500; margin: 1px 2px; }
+.tag-founder { background: #f0f7ff; color: #0066cc; }
+.tag-engineer { background: #f0fff4; color: #008844; }
+.tag-vc { background: #fef3f0; color: #cc4400; }
+.tag-designer { background: #f5f0ff; color: #6633cc; }
+.tag-student { background: #fff8f0; color: #996600; }
+.tag-pm { background: #f0ffff; color: #008888; }
+.empty { text-align: center; padding: 40px; color: #888; }
+@media (max-width: 768px) {
+  .container { padding: 16px; }
+  header h1 { font-size: 22px; }
+  .stats { gap: 12px; }
+  .bio-cell { max-width: 150px; }
+  td, th { padding: 8px 10px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>ClawCon NYC — Attendee Directory</h1>
+    <p>1,309 attendees · Presented by Kilo Code · Enriched data from Luma + Twitter</p>
+    <div class="stats" id="stats"></div>
+  </header>
+  
+  <div class="controls">
+    <input type="text" class="search" id="search" placeholder="Search by name, bio, company, location...">
+    <select class="sort-select" id="sort">
+      <option value="name">Sort: Name A→Z</option>
+      <option value="followers">Sort: Followers ↓</option>
+    </select>
+  </div>
+  
+  <div class="controls">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="has-twitter">Has Twitter</button>
+    <button class="filter-btn" data-filter="has-linkedin">Has LinkedIn</button>
+    <button class="filter-btn" data-filter="has-bio">Has Bio</button>
+    <button class="filter-btn" data-filter="verified">Verified ✓</button>
+    <button class="filter-btn" data-filter="founder">Founders</button>
+    <button class="filter-btn" data-filter="engineer">Engineers</button>
+    <button class="filter-btn" data-filter="vc">VCs/Investors</button>
+    <button class="filter-btn" data-filter="designer">Designers</button>
+  </div>
+  
+  <div class="count" id="count"></div>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Bio / Headline</th>
+        <th>Tags</th>
+        <th>Links</th>
+        <th>Followers</th>
+      </tr>
+    </thead>
+    <tbody id="tbody"></tbody>
+  </table>
+  
+  <div class="empty" id="empty" style="display:none;">No attendees match your search.</div>
+</div>
+
+<script>
+// Data will be injected here
+let DATA = [];
+
+function loadData() {
+  fetch('data.json')
+    .then(r => r.json())
+    .then(d => { DATA = d; init(); })
+    .catch(() => { document.getElementById('empty').style.display = 'block'; document.getElementById('empty').textContent = 'Failed to load data. Make sure data.json is in the same directory.'; });
+}
+
+function detectTags(person) {
+  const tags = [];
+  const text = ((person.bio || '') + ' ' + (person.luma_bio || '')).toLowerCase();
+  if (/founder|ceo|co-founder|cofounder|building|built|started/.test(text)) tags.push('founder');
+  if (/engineer|developer|swe|dev |coding|programmer|mle |ml engineer/.test(text)) tags.push('engineer');
+  if (/vc |venture|investor|gp |partner at|angel|fund /.test(text)) tags.push('vc');
+  if (/design|ux |ui |product design|creative director/.test(text)) tags.push('designer');
+  if (/student|grad |undergrad|university|college|@ nyu|@ columbia|@ cornell/.test(text)) tags.push('student');
+  if (/product manager|pm |product lead|head of product/.test(text)) tags.push('pm');
+  return tags;
+}
+
+function formatFollowers(n) {
+  if (!n) return '';
+  if (n >= 1000000) return (n/1000000).toFixed(1) + 'M';
+  if (n >= 1000) return (n/1000).toFixed(1) + 'K';
+  return n.toString();
+}
+
+const tagClasses = { founder: 'tag-founder', engineer: 'tag-engineer', vc: 'tag-vc', designer: 'tag-designer', student: 'tag-student', pm: 'tag-pm' };
+
+function renderRow(p) {
+  const tags = detectTags(p);
+  const links = [];
+  if (p.twitter) links.push(`<a class="tw" href="https://x.com/${p.twitter}" target="_blank" title="@${p.twitter}">𝕏</a>`);
+  if (p.linkedin) links.push(`<a class="li" href="https://linkedin.com${p.linkedin}" target="_blank" title="LinkedIn">in</a>`);
+  if (p.instagram) links.push(`<a class="ig" href="https://instagram.com/${p.instagram}" target="_blank" title="Instagram">ig</a>`);
+  if (p.website) links.push(`<a class="web" href="${p.website}" target="_blank" title="${p.website}">🔗</a>`);
+  
+  const bio = p.bio || p.luma_bio || '';
+  const verified = p.tw_verified ? ' <span class="verified">✓</span>' : '';
+  const tagsHtml = tags.map(t => `<span class="tag ${tagClasses[t]}">${t}</span>`).join('');
+  const followers = p.tw_followers ? `<span class="followers">${formatFollowers(p.tw_followers)}</span>` : '';
+  
+  return `<tr data-tags="${tags.join(',')}" data-twitter="${p.twitter||''}" data-linkedin="${p.linkedin||''}" data-bio="${bio}" data-search="${(p.name + ' ' + bio + ' ' + (p.tw_location||'')).toLowerCase()}">
+    <td class="name-cell">${p.name}${verified}</td>
+    <td class="bio-cell" title="${bio.replace(/"/g,'&quot;')}">${bio}</td>
+    <td>${tagsHtml}</td>
+    <td><div class="social-links">${links.join('')}</div></td>
+    <td>${followers}</td>
+  </tr>`;
+}
+
+let currentFilter = 'all';
+let currentSort = 'name';
+let currentSearch = '';
+
+function render() {
+  let filtered = DATA.filter(p => {
+    if (currentSearch) {
+      const s = currentSearch.toLowerCase();
+      const haystack = (p.name + ' ' + (p.bio||'') + ' ' + (p.luma_bio||'') + ' ' + (p.tw_location||'') + ' ' + (p.twitter||'') + ' ' + (p.linkedin||'')).toLowerCase();
+      if (!haystack.includes(s)) return false;
+    }
+    const tags = detectTags(p);
+    switch(currentFilter) {
+      case 'has-twitter': return !!p.twitter;
+      case 'has-linkedin': return !!p.linkedin;
+      case 'has-bio': return !!(p.bio || p.luma_bio);
+      case 'verified': return p.tw_verified;
+      case 'founder': return tags.includes('founder');
+      case 'engineer': return tags.includes('engineer');
+      case 'vc': return tags.includes('vc');
+      case 'designer': return tags.includes('designer');
+      default: return true;
+    }
+  });
+  
+  if (currentSort === 'followers') {
+    filtered.sort((a,b) => (b.tw_followers||0) - (a.tw_followers||0));
+  } else {
+    filtered.sort((a,b) => a.name.localeCompare(b.name));
+  }
+  
+  document.getElementById('count').textContent = `Showing ${filtered.length} of ${DATA.length} attendees`;
+  document.getElementById('tbody').innerHTML = filtered.map(renderRow).join('');
+  document.getElementById('empty').style.display = filtered.length ? 'none' : 'block';
+  
+  // Stats
+  const withTw = DATA.filter(d => d.twitter).length;
+  const withLi = DATA.filter(d => d.linkedin).length;
+  const withBio = DATA.filter(d => d.bio || d.luma_bio).length;
+  const verified = DATA.filter(d => d.tw_verified).length;
+  document.getElementById('stats').innerHTML = `
+    <div class="stat"><div class="stat-num">${DATA.length}</div><div class="stat-label">Attendees</div></div>
+    <div class="stat"><div class="stat-num">${withTw}</div><div class="stat-label">Twitter</div></div>
+    <div class="stat"><div class="stat-num">${withLi}</div><div class="stat-label">LinkedIn</div></div>
+    <div class="stat"><div class="stat-num">${withBio}</div><div class="stat-label">With Bio</div></div>
+    <div class="stat"><div class="stat-num">${verified}</div><div class="stat-label">Verified</div></div>
+  `;
+}
+
+function init() {
+  render();
+  
+  document.getElementById('search').addEventListener('input', e => {
+    currentSearch = e.target.value;
+    render();
+  });
+  
+  document.getElementById('sort').addEventListener('change', e => {
+    currentSort = e.target.value;
+    render();
+  });
+  
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentFilter = btn.dataset.filter;
+      render();
+    });
+  });
+}
+
+loadData();
+</script>
+</body>
+</html>
