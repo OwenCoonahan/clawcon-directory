@@ -238,7 +238,7 @@ function getData() {
 
 function detectTags(p) {
   const tags = [];
-  const text = ((p.bio || '') + ' ' + (p.luma_bio || '') + ' ' + (p.tw_bio || '')).toLowerCase();
+  const text = ((p.bio || '') + ' ' + (p.luma_bio || '') + ' ' + (p.tw_bio || '') + ' ' + (p.li_headline || '')).toLowerCase();
   if (/founder|ceo|co-founder|cofounder|\bbuilding\b|started|my company|chief executive/.test(text)) tags.push('founder');
   if (/engineer|developer|\bswe\b|\bdev\b|coding|programmer|\bmle\b|ml engineer|software|backend|frontend|full.?stack|devops|infra/.test(text)) tags.push('engineer');
   if (/\bvc\b|venture|investor|\bgp\b|partner at|angel|fund |capital|seed stage|series [a-d]|portfolio/.test(text)) tags.push('vc');
@@ -271,15 +271,15 @@ function renderRow(p) {
   if (p.website) links.push(`<a href="${p.website}" target="_blank" title="${p.website}">🔗</a>`);
   if (p.luma_url) links.push(`<a href="${p.luma_url}" target="_blank" title="Luma Profile"><svg width="14" height="14" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M29.5 14.5C21.5 14.5 15 8 15 0C15 8 8.5 14.5 0.5 14.5C8.5 14.5 15 21 15 29C15 21 21.5 14.5 29.5 14.5Z" fill="currentColor"/></svg></a>`);
   
-  // Show both bios if different
+  // Show all bios separately
   const twBio = p.tw_bio || '';
   const lumaBio = p.luma_bio || '';
-  let bioHtml = '';
-  if (twBio && lumaBio && twBio !== lumaBio) {
-    bioHtml = `<div style="line-height:1.4"><span style="color:#333">${twBio}</span><br><span style="color:#999;font-size:11px;">Luma: ${lumaBio}</span></div>`;
-  } else {
-    bioHtml = twBio || lumaBio || '';
-  }
+  const liHeadline = p.li_headline || '';
+  let bioLines = [];
+  if (twBio) bioLines.push(`<span style="color:var(--text)">${twBio}</span>`);
+  if (liHeadline && liHeadline !== twBio) bioLines.push(`<span style="color:var(--text-muted);font-size:11px;">💼 ${liHeadline}</span>`);
+  if (lumaBio && lumaBio !== twBio && lumaBio !== liHeadline) bioLines.push(`<span style="color:var(--text-muted);font-size:11px;">✦ ${lumaBio}</span>`);
+  const bioHtml = bioLines.length ? `<div style="line-height:1.5">${bioLines.join('<br>')}</div>` : '';
   
   const verified = p.tw_verified ? ' <svg width="14" height="14" viewBox="0 0 22 22" style="vertical-align:-2px;margin-left:2px;"><path d="M20.396 11c-.018-.646-.215-1.275-.57-1.816-.354-.54-.852-.972-1.438-1.246.223-.607.27-1.264.14-1.897-.131-.634-.437-1.218-.882-1.687-.47-.445-1.053-.75-1.687-.882-.633-.13-1.29-.083-1.897.14-.273-.587-.704-1.086-1.245-1.44S11.647 1.62 11 1.604c-.646.017-1.273.213-1.813.568s-.969.855-1.24 1.44c-.608-.223-1.267-.272-1.902-.14-.635.13-1.22.436-1.69.882-.445.47-.749 1.055-.878 1.69-.13.635-.08 1.293.144 1.896-.587.274-1.087.705-1.443 1.245-.356.54-.555 1.17-.574 1.817.02.647.218 1.276.574 1.817.356.54.856.972 1.443 1.245-.224.604-.274 1.26-.144 1.896.13.636.433 1.221.878 1.69.47.446 1.055.752 1.69.883.635.13 1.294.083 1.902-.141.27.587.7 1.086 1.24 1.44s1.167.551 1.813.568c.647-.017 1.277-.213 1.817-.567s.972-.854 1.245-1.44c.604.224 1.26.272 1.895.141.636-.13 1.22-.436 1.69-.882.445-.47.75-1.055.88-1.69.131-.636.083-1.293-.139-1.897.586-.274 1.084-.705 1.439-1.246.354-.54.551-1.17.569-1.816zM9.662 14.85l-3.429-3.428 1.293-1.302 2.072 2.072 4.4-4.794 1.347 1.246z" fill="#1d9bf0"/></svg>' : '';
   const tagsHtml = tags.map(t => `<span class="tag ${tagClasses[t]}">${t}</span>`).join('');
@@ -301,14 +301,14 @@ function render() {
   let filtered = data.filter(p => {
     if (currentSearch) {
       const s = currentSearch.toLowerCase();
-      const hay = (p.name + ' ' + (p.bio||'') + ' ' + (p.luma_bio||'') + ' ' + (p.tw_location||'') + ' ' + (p.twitter||'') + ' ' + (p.linkedin||'')).toLowerCase();
+      const hay = (p.name + ' ' + (p.bio||'') + ' ' + (p.luma_bio||'') + ' ' + (p.li_headline||'') + ' ' + (p.li_company||'') + ' ' + (p.li_location||'') + ' ' + (p.tw_location||'') + ' ' + (p.twitter||'') + ' ' + (p.linkedin||'')).toLowerCase();
       if (!hay.includes(s)) return false;
     }
     const tags = detectTags(p);
     switch(currentFilter) {
       case 'has-twitter': return !!p.twitter;
       case 'has-linkedin': return !!p.linkedin;
-      case 'has-bio': return !!(p.bio || p.luma_bio);
+      case 'has-bio': return !!(p.bio || p.luma_bio || p.li_headline);
       case 'verified': return p.tw_verified;
       case 'founder': return tags.includes('founder');
       case 'engineer': return tags.includes('engineer');
@@ -337,7 +337,7 @@ function render() {
   
   const withTw = data.filter(d => d.twitter).length;
   const withLi = data.filter(d => d.linkedin).length;
-  const withBio = data.filter(d => d.bio || d.luma_bio).length;
+  const withBio = data.filter(d => d.bio || d.luma_bio || d.li_headline).length;
   document.getElementById('stats').innerHTML = `
     <div class="stat"><div class="stat-num">${data.length.toLocaleString()}</div><div class="stat-label">Attendees</div></div>
     <div class="stat"><div class="stat-num">${withTw}</div><div class="stat-label">X/Twitter</div></div>
@@ -362,14 +362,14 @@ document.getElementById('downloadCsv').addEventListener('click', () => {
   let filtered = data.filter(p => {
     if (currentSearch) {
       const s = currentSearch.toLowerCase();
-      const hay = (p.name + ' ' + (p.bio||'') + ' ' + (p.luma_bio||'') + ' ' + (p.tw_location||'') + ' ' + (p.twitter||'') + ' ' + (p.linkedin||'')).toLowerCase();
+      const hay = (p.name + ' ' + (p.bio||'') + ' ' + (p.luma_bio||'') + ' ' + (p.li_headline||'') + ' ' + (p.li_company||'') + ' ' + (p.li_location||'') + ' ' + (p.tw_location||'') + ' ' + (p.twitter||'') + ' ' + (p.linkedin||'')).toLowerCase();
       if (!hay.includes(s)) return false;
     }
     const tags = detectTags(p);
     switch(currentFilter) {
       case 'has-twitter': return !!p.twitter;
       case 'has-linkedin': return !!p.linkedin;
-      case 'has-bio': return !!(p.bio || p.luma_bio);
+      case 'has-bio': return !!(p.bio || p.luma_bio || p.li_headline);
       case 'verified': return p.tw_verified;
       case 'founder': return tags.includes('founder');
       case 'engineer': return tags.includes('engineer');
@@ -386,9 +386,10 @@ document.getElementById('downloadCsv').addEventListener('click', () => {
   else filtered.sort((a,b) => a.name.localeCompare(b.name));
   
   const esc = v => '"' + String(v||'').replace(/"/g,'""') + '"';
-  const headers = ['Name','Bio','Twitter Bio','Luma Bio','Twitter','Followers','Verified','Location','LinkedIn','Instagram','Website','Luma Profile'];
+  const headers = ['Name','Twitter Bio','LinkedIn Headline','Luma Bio','LinkedIn Company','LinkedIn Position','LinkedIn Location','LinkedIn School','Twitter','Followers','Verified','Twitter Location','LinkedIn','Instagram','Website','Luma Profile'];
   const rows = filtered.map(p => [
-    esc(p.name), esc(p.bio), esc(p.tw_bio), esc(p.luma_bio),
+    esc(p.name), esc(p.tw_bio), esc(p.li_headline), esc(p.luma_bio),
+    esc(p.li_company), esc(p.li_position), esc(p.li_location), esc(p.li_school),
     esc(p.twitter ? 'https://x.com/'+p.twitter : ''),
     p.tw_followers||'', p.tw_verified?'Yes':'',
     esc(p.tw_location),
