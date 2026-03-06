@@ -48,6 +48,12 @@ tr:hover { background: #f9f9f9; }
 .tag-founder { background: #f0f7ff; color: #0066cc; }
 .tag-engineer { background: #f0fff4; color: #008844; }
 .tag-vc { background: #fef3f0; color: #cc4400; }
+.tag-ai { background: #f5f0ff; color: #7c3aed; }
+.tag-crypto { background: #fffbeb; color: #b45309; }
+.tag-student { background: #f0fdf4; color: #16a34a; }
+.tag-pm { background: #fef2f2; color: #dc2626; }
+.tag-marketing { background: #fdf2f8; color: #db2777; }
+.tag-research { background: #f0f9ff; color: #0369a1; }
 .tag-designer { background: #f5f0ff; color: #6633cc; }
 .tag-student { background: #fff8f0; color: #996600; }
 .tag-pm { background: #f0ffff; color: #008888; }
@@ -84,7 +90,7 @@ tr:hover { background: #f9f9f9; }
   
   <div class="controls" id="filters">
     <button class="filter-btn active" data-filter="all">All</button>
-    <button class="filter-btn" data-filter="has-twitter">Twitter</button>
+    <button class="filter-btn" data-filter="has-twitter">X/Twitter</button>
     <button class="filter-btn" data-filter="has-linkedin">LinkedIn</button>
     <button class="filter-btn" data-filter="has-bio">Has Bio</button>
     <button class="filter-btn" data-filter="verified">Verified ✓</button>
@@ -92,6 +98,10 @@ tr:hover { background: #f9f9f9; }
     <button class="filter-btn" data-filter="engineer">Engineers</button>
     <button class="filter-btn" data-filter="vc">VCs</button>
     <button class="filter-btn" data-filter="designer">Designers</button>
+    <button class="filter-btn" data-filter="pm">PMs</button>
+    <button class="filter-btn" data-filter="ai">AI/ML</button>
+    <button class="filter-btn" data-filter="crypto">Crypto/Web3</button>
+    <button class="filter-btn" data-filter="student">Students</button>
   </div>
   
   <div class="result-count" id="count"></div>
@@ -175,13 +185,17 @@ function getData() {
 
 function detectTags(p) {
   const tags = [];
-  const text = ((p.bio || '') + ' ' + (p.luma_bio || '')).toLowerCase();
-  if (/founder|ceo|co-founder|cofounder|building|started|my company/.test(text)) tags.push('founder');
-  if (/engineer|developer|swe|dev |coding|programmer|mle |ml engineer|software/.test(text)) tags.push('engineer');
-  if (/\bvc\b|venture|investor|gp |partner at|angel|fund |capital/.test(text)) tags.push('vc');
-  if (/design|ux |ui |product design|creative director/.test(text)) tags.push('designer');
-  if (/student|grad |undergrad|university|college|@ nyu|@ columbia|@ cornell/.test(text)) tags.push('student');
-  if (/product manager|pm |product lead|head of product/.test(text)) tags.push('pm');
+  const text = ((p.bio || '') + ' ' + (p.luma_bio || '') + ' ' + (p.tw_bio || '')).toLowerCase();
+  if (/founder|ceo|co-founder|cofounder|\bbuilding\b|started|my company|chief executive/.test(text)) tags.push('founder');
+  if (/engineer|developer|\bswe\b|\bdev\b|coding|programmer|\bmle\b|ml engineer|software|backend|frontend|full.?stack|devops|infra/.test(text)) tags.push('engineer');
+  if (/\bvc\b|venture|investor|\bgp\b|partner at|angel|fund |capital|seed stage|series [a-d]|portfolio/.test(text)) tags.push('vc');
+  if (/design|ux |ui |product design|creative director|graphic|figma|brand design/.test(text)) tags.push('designer');
+  if (/product manager|\bpm\b|product lead|head of product|product @|product at/.test(text)) tags.push('pm');
+  if (/\bai\b|machine learning|\bml\b|deep learning|neural|llm|gpt|artificial intelligence|nlp|computer vision|diffusion|transformer/.test(text)) tags.push('ai');
+  if (/crypto|web3|blockchain|defi|\bdao\b|solidity|ethereum|\beth\b|bitcoin|nft|onchain|on-chain|token/.test(text)) tags.push('crypto');
+  if (/student|grad |undergrad|university|college|studying|@ nyu|@ columbia|@ cornell|@ mit|@ stanford|class of|phd candidate/.test(text)) tags.push('student');
+  if (/marketing|growth|content|social media|brand |community|creator economy|influencer/.test(text)) tags.push('marketing');
+  if (/research|scientist|professor|academic|phd|postdoc|lab /.test(text)) tags.push('research');
   return tags;
 }
 
@@ -192,7 +206,7 @@ function formatFollowers(n) {
   return n.toString();
 }
 
-const tagClasses = { founder:'tag-founder', engineer:'tag-engineer', vc:'tag-vc', designer:'tag-designer', student:'tag-student', pm:'tag-pm' };
+const tagClasses = { founder:'tag-founder', engineer:'tag-engineer', vc:'tag-vc', designer:'tag-designer', student:'tag-student', pm:'tag-pm', ai:'tag-ai', crypto:'tag-crypto', marketing:'tag-marketing', research:'tag-research' };
 const cityNames = { nyc:'NYC', austin:'Austin', telaviv:'Tel Aviv', miami:'Miami', london:'London', guadalajara:'GDL', rio:'Rio' };
 
 function renderRow(p) {
@@ -247,6 +261,10 @@ function render() {
       case 'engineer': return tags.includes('engineer');
       case 'vc': return tags.includes('vc');
       case 'designer': return tags.includes('designer');
+      case 'pm': return tags.includes('pm');
+      case 'ai': return tags.includes('ai');
+      case 'crypto': return tags.includes('crypto');
+      case 'student': return tags.includes('student');
       default: return true;
     }
   });
@@ -269,7 +287,7 @@ function render() {
   const withBio = data.filter(d => d.bio || d.luma_bio).length;
   document.getElementById('stats').innerHTML = `
     <div class="stat"><div class="stat-num">${data.length.toLocaleString()}</div><div class="stat-label">Attendees</div></div>
-    <div class="stat"><div class="stat-num">${withTw}</div><div class="stat-label">Twitter</div></div>
+    <div class="stat"><div class="stat-num">${withTw}</div><div class="stat-label">X/Twitter</div></div>
     <div class="stat"><div class="stat-num">${withLi}</div><div class="stat-label">LinkedIn</div></div>
     <div class="stat"><div class="stat-num">${withBio}</div><div class="stat-label">With Bio</div></div>
   `;
@@ -304,6 +322,10 @@ document.getElementById('downloadCsv').addEventListener('click', () => {
       case 'engineer': return tags.includes('engineer');
       case 'vc': return tags.includes('vc');
       case 'designer': return tags.includes('designer');
+      case 'pm': return tags.includes('pm');
+      case 'ai': return tags.includes('ai');
+      case 'crypto': return tags.includes('crypto');
+      case 'student': return tags.includes('student');
       default: return true;
     }
   });
